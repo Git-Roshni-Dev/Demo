@@ -1,0 +1,141 @@
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif; /* A clear, professional font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for the page */
+}
+
+.resume-container {
+    width: 21cm; /* A4 width standard */
+    min-height: 29.7cm; /* A4 height standard */
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual appeal */
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #004d99; /* Professional dark blue for section headers */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #eee; /* Light divider */
+    margin: 15px 0;
+}
+
+/* --- Header / Personal Information --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+}
+
+.photo-placeholder {
+    width: 80px; /* Small photo size */
+    height: 80px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    /* Optional: Add a subtle border-radius for a soft look */
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
+/* --- Education Table --- */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
+.education-table th, .education-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+/* --- Skills & Strengths Layout --- */
+.two-column-layout {
+    display: flex;
+    gap: 30px; /* Space between columns */
+}
+
+.two-column-layout .column {
+    flex: 1;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* --- Footer / Signature --- */
+.footer {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 0.9em;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+}
+
+
+/* --- Print Optimization (VERY IMPORTANT for PDF) --- */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+    .resume-container {
+        box-shadow: none; /* Remove shadow when printing */
+        margin: 0;
+        padding: 0 30px; /* Add internal padding */
+    }
+    /* Ensure all text/elements are visible in print */
+    h1, h2, h3, p, li, table {
+        color: #000 !important;
+    }
+}
